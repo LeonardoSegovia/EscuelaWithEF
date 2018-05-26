@@ -2,9 +2,7 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace EscuelaEF.Model
 {
-    using System;
     using System.Data.Entity;
-    using System.Linq;
 
     public class EscuelaConext : DbContext
     {
@@ -14,6 +12,9 @@ namespace EscuelaEF.Model
         // 
         // If you wish to target a different database and/or database provider, modify the 'EscuelaConext' 
         // connection string in the application configuration file.
+
+        public DbSet<Alumno> Alumno { get; set; }
+
         public EscuelaConext()
             : base("name=EscuelaConext")
         {

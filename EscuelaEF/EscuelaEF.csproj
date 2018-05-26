@@ -59,6 +59,10 @@
     <Compile Include="Migrations\201805252349566_AlterAlumno.Designer.cs">
       <DependentUpon>201805252349566_AlterAlumno.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805260310190_SeedAlumnos.cs" />
+    <Compile Include="Migrations\201805260310190_SeedAlumnos.Designer.cs">
+      <DependentUpon>201805260310190_SeedAlumnos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Alumno.cs" />
     <Compile Include="Model\EscuelaConext.cs" />
@@ -75,6 +79,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805252349566_AlterAlumno.resx">
       <DependentUpon>201805252349566_AlterAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805260310190_SeedAlumnos.resx">
+      <DependentUpon>201805260310190_SeedAlumnos.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

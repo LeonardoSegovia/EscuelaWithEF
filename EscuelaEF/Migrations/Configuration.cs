@@ -1,9 +1,9 @@
+using System;
+using EscuelaEF.Model;
+
 namespace EscuelaEF.Migrations
 {
-    using System;
-    using System.Data.Entity;
     using System.Data.Entity.Migrations;
-    using System.Linq;
 
     internal sealed class Configuration : DbMigrationsConfiguration<EscuelaEF.Model.EscuelaConext>
     {
@@ -12,20 +12,27 @@ namespace EscuelaEF.Migrations
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(EscuelaEF.Model.EscuelaConext context)
+        protected override void Seed(EscuelaConext context)
         {
-            //  This method will be called after migrating to the latest version.
 
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //
+            context.Alumno.AddOrUpdate(
+                new Alumno
+                {
+                    Nombre = "Leonardo",
+                    Apellido = "Segovia",
+                    Actualizado = DateTime.Now,
+                    Creado = DateTime.Now
+                },
+                new Alumno
+                {
+                    Nombre = "Yamila",
+                    Apellido = "Rosales",
+                    Actualizado = DateTime.Now,
+                    Creado = DateTime.Now
+                }
+
+                );
+
         }
     }
 }
