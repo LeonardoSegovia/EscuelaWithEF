@@ -63,8 +63,14 @@
     <Compile Include="Migrations\201805260310190_SeedAlumnos.Designer.cs">
       <DependentUpon>201805260310190_SeedAlumnos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805280140433_Add Cursos.cs" />
+    <Compile Include="Migrations\201805280140433_Add Cursos.Designer.cs">
+      <DependentUpon>201805280140433_Add Cursos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Alumno.cs" />
+    <Compile Include="Model\AlumnoCurso.cs" />
+    <Compile Include="Model\Curso.cs" />
     <Compile Include="Model\EscuelaConext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -82,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805260310190_SeedAlumnos.resx">
       <DependentUpon>201805260310190_SeedAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805280140433_Add Cursos.resx">
+      <DependentUpon>201805280140433_Add Cursos.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -6,14 +6,9 @@ namespace EscuelaEF.Model
 
     public class EscuelaConext : DbContext
     {
-        // Your context has been configured to use a 'EscuelaConext' connection string from your application's 
-        // configuration file (App.config or Web.config). By default, this connection string targets the 
-        // 'EscuelaEF.Model.EscuelaConext' database on your LocalDb instance. 
-        // 
-        // If you wish to target a different database and/or database provider, modify the 'EscuelaConext' 
-        // connection string in the application configuration file.
-
         public DbSet<Alumno> Alumno { get; set; }
+        public DbSet<AlumnoCurso> AlumnoCurso { get; set; }
+        public DbSet<Curso> Curso { get; set; }
 
         public EscuelaConext()
             : base("name=EscuelaConext")
@@ -29,6 +24,19 @@ namespace EscuelaEF.Model
             modelBuilder.Entity<Alumno>().Property(p => p.Nombre).HasMaxLength(50).IsRequired();
 
             modelBuilder.Entity<Alumno>().Property(p => p.Apellido).HasMaxLength(50).IsRequired();
+
+            #endregion
+
+            #region Curso
+
+            modelBuilder.Entity<Curso>().Property(p => p.Nombre).HasMaxLength(50).IsRequired();
+
+            #endregion
+
+
+            #region AlumnoCurso
+
+            modelBuilder.Entity<AlumnoCurso>().HasKey(k => new {k.AlumnoId, k.CursoId});
 
             #endregion
 

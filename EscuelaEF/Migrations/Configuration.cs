@@ -33,6 +33,23 @@ namespace EscuelaEF.Migrations
 
                 );
 
+
+            context.Curso.AddOrUpdate(
+                new Curso
+                {
+                    Nombre ="C# Avanzado",
+                    Actualizado = DateTime.Now,
+                    Creado = DateTime.Now
+                });
+
+            context.Curso.AddOrUpdate(
+                new Curso
+                {
+                    Nombre = "ASP .NET MVC",
+                    Actualizado = DateTime.Now,
+                    Creado = DateTime.Now
+                });
+
         }
     }
 }
