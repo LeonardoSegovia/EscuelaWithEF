@@ -35,9 +35,6 @@ namespace EscuelaEF.Model
 
 
             #region AlumnoCurso
-
-            modelBuilder.Entity<AlumnoCurso>().HasKey(k => new {k.AlumnoId, k.CursoId});
-
             #endregion
 
         }

@@ -63,13 +63,13 @@
     <Compile Include="Migrations\201805260310190_SeedAlumnos.Designer.cs">
       <DependentUpon>201805260310190_SeedAlumnos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201805280140433_Add Cursos.cs" />
-    <Compile Include="Migrations\201805280140433_Add Cursos.Designer.cs">
-      <DependentUpon>201805280140433_Add Cursos.cs</DependentUpon>
+    <Compile Include="Migrations\201805280140433_AddCursos.cs" />
+    <Compile Include="Migrations\201805280140433_AddCursos.Designer.cs">
+      <DependentUpon>201805280140433_AddCursos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201805280207095_Add Direccion.cs" />
-    <Compile Include="Migrations\201805280207095_Add Direccion.Designer.cs">
-      <DependentUpon>201805280207095_Add Direccion.cs</DependentUpon>
+    <Compile Include="Migrations\201805280207095_AddDireccion.cs" />
+    <Compile Include="Migrations\201805280207095_AddDireccion.Designer.cs">
+      <DependentUpon>201805280207095_AddDireccion.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Alumno.cs" />
@@ -94,11 +94,11 @@
     <EmbeddedResource Include="Migrations\201805260310190_SeedAlumnos.resx">
       <DependentUpon>201805260310190_SeedAlumnos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805280140433_Add Cursos.resx">
-      <DependentUpon>201805280140433_Add Cursos.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201805280140433_AddCursos.resx">
+      <DependentUpon>201805280140433_AddCursos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805280207095_Add Direccion.resx">
-      <DependentUpon>201805280207095_Add Direccion.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201805280207095_AddDireccion.resx">
+      <DependentUpon>201805280207095_AddDireccion.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
