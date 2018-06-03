@@ -7,13 +7,13 @@ namespace EscuelaEF.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class SeedAlumnos : IMigrationMetadata
+    public sealed partial class AddAlumnoEstado : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(SeedAlumnos));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddAlumnoEstado));
         
         string IMigrationMetadata.Id
         {
-            get { return "201805260310190_SeedAlumnos"; }
+            get { return "201806030235403_AddAlumnoEstado"; }
         }
         
         string IMigrationMetadata.Source

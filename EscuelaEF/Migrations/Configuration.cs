@@ -15,6 +15,23 @@ namespace EscuelaEF.Migrations
         protected override void Seed(EscuelaConext context)
         {
 
+            context.AlumnoEstado.AddOrUpdate(
+                new AlumnoEstado
+                {
+                    AlumnoEstadoId = 0,
+                    Descripcion = "Registrado"
+                },
+                new AlumnoEstado
+                {
+                    AlumnoEstadoId = 1,
+                    Descripcion = "Habilitado - Metricula Inpaga"
+                },
+                new AlumnoEstado
+                {
+                    AlumnoEstadoId = 2,
+                    Descripcion = "Habilitado"
+                });
+
             context.Alumno.AddOrUpdate(
                 new Alumno
                 {
