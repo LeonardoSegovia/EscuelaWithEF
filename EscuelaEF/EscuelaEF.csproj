@@ -51,30 +51,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201805252334305_AddAlumno.cs" />
-    <Compile Include="Migrations\201805252334305_AddAlumno.Designer.cs">
-      <DependentUpon>201805252334305_AddAlumno.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201805252349566_AlterAlumno.cs" />
-    <Compile Include="Migrations\201805252349566_AlterAlumno.Designer.cs">
-      <DependentUpon>201805252349566_AlterAlumno.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201805260310190_SeedAlumnos.cs" />
-    <Compile Include="Migrations\201805260310190_SeedAlumnos.Designer.cs">
-      <DependentUpon>201805260310190_SeedAlumnos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201805280140433_AddCursos.cs" />
-    <Compile Include="Migrations\201805280140433_AddCursos.Designer.cs">
-      <DependentUpon>201805280140433_AddCursos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201805280207095_AddDireccion.cs" />
-    <Compile Include="Migrations\201805280207095_AddDireccion.Designer.cs">
-      <DependentUpon>201805280207095_AddDireccion.cs</DependentUpon>
+    <Compile Include="Migrations\201806030235403_AddAlumnoEstado.cs" />
+    <Compile Include="Migrations\201806030235403_AddAlumnoEstado.Designer.cs">
+      <DependentUpon>201806030235403_AddAlumnoEstado.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Alumno.cs" />
     <Compile Include="Model\AlumnoCurso.cs" />
     <Compile Include="Model\AlumnoDireccion.cs" />
+    <Compile Include="Model\AlumnoEstado.cs" />
     <Compile Include="Model\Curso.cs" />
     <Compile Include="Model\EscuelaConext.cs" />
     <Compile Include="Program.cs" />
@@ -85,20 +70,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201805252334305_AddAlumno.resx">
-      <DependentUpon>201805252334305_AddAlumno.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805252349566_AlterAlumno.resx">
-      <DependentUpon>201805252349566_AlterAlumno.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805260310190_SeedAlumnos.resx">
-      <DependentUpon>201805260310190_SeedAlumnos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805280140433_AddCursos.resx">
-      <DependentUpon>201805280140433_AddCursos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805280207095_AddDireccion.resx">
-      <DependentUpon>201805280207095_AddDireccion.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201806030235403_AddAlumnoEstado.resx">
+      <DependentUpon>201806030235403_AddAlumnoEstado.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

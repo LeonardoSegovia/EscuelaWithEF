@@ -8,6 +8,7 @@ namespace EscuelaEF.Model
     {
         public DbSet<Alumno> Alumno { get; set; }
         public DbSet<AlumnoCurso> AlumnoCurso { get; set; }
+        public DbSet<AlumnoEstado> AlumnoEstado { get; set; }
         public DbSet<Curso> Curso { get; set; }
 
         public EscuelaConext()
@@ -25,29 +26,25 @@ namespace EscuelaEF.Model
 
             modelBuilder.Entity<Alumno>().Property(p => p.Apellido).HasMaxLength(50).IsRequired();
 
+            modelBuilder.Entity<Alumno>().HasRequired(fk => fk.Estado).WithMany(r => r.Alumnos);
+
             #endregion
 
             #region Curso
+
+            modelBuilder.Entity<AlumnoCurso>().HasKey(k => new { k.AlumnoId, k.CursoId });
 
             modelBuilder.Entity<Curso>().Property(p => p.Nombre).HasMaxLength(50).IsRequired();
 
             #endregion
 
+            #region Estado
 
-            #region AlumnoCurso
+            //modelBuilder.Entity<AlumnoEstado>().HasMany(r => r.Alumnos);
+
             #endregion
 
         }
 
-        // Add a DbSet for each entity type that you want to include in your model. For more information 
-        // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
-
-        // public virtual DbSet<MyEntity> MyEntities { get; set; }
     }
-
-    //public class MyEntity
-    //{
-    //    public int Id { get; set; }
-    //    public string Name { get; set; }
-    //}
 }

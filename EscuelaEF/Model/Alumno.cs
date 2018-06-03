@@ -12,6 +12,9 @@ namespace EscuelaEF.Model
         public DateTime Creado { get; set; }
         public DateTime Actualizado { get; set; }
 
+        public int AlumnoEstadoId { get; set; }
+        public AlumnoEstado Estado { get; set; }
+
         public List<AlumnoCurso> Cursos { get; set; }
         public List<AlumnoDireccion> Direcciones { get; set; }
     }
